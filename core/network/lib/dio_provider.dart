@@ -4,7 +4,7 @@ import 'pretty_dio_logger.dart';
 import 'request_headers.dart';
 
 class DioProvider {
-  static const String baseUrl = "";
+  static const String baseUrl = "https://majiddeveloper.ir/";
 
   static Dio? _instance;
 
