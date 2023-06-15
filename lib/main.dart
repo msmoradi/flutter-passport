@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/route_manager.dart';
+import 'package:passport/app/bindings/initial_binding.dart';
 import 'package:passport/app/core/theme/app_bar_theme.dart';
 import 'package:passport/app/core/theme/tab_bar_theme.dart';
 import 'package:passport/app/routes/app_pages.dart';
@@ -18,6 +19,7 @@ void main() {
         Locale("fa", "IR"),
       ],
       locale: const Locale("fa", "IR"),
+      initialBinding: InitialBinding(),
       theme: ThemeData(
           useMaterial3: true,
           tabBarTheme: PassportTabBarTheme.lightTabBarTheme,
