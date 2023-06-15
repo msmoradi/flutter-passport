@@ -3,7 +3,7 @@ import 'package:passport/app/core/base/base_controller.dart';
 import 'package:passport/app/core/model/Item_data.dart';
 import 'package:passport/app/domain/department_repository.dart';
 
-class TeamController extends BaseController {
+class AchievementController extends BaseController {
   final DepartmentRepository _repository =
       Get.find(tag: (DepartmentRepository).toString());
 

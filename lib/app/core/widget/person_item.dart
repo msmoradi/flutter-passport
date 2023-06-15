@@ -62,6 +62,9 @@ class PersonItem extends StatelessWidget {
                             .bodyMedium
                             ?.copyWith(color: Colors.black),
                       ),
+                      const SizedBox(
+                        width: 4,
+                      ),
                       Text(
                         company,
                         style: Theme.of(context)
@@ -77,6 +80,9 @@ class PersonItem extends StatelessWidget {
                         Icons.calendar_month_outlined,
                         color: Colors.grey,
                         size: 12,
+                      ),
+                      const SizedBox(
+                        width: 4,
                       ),
                       Expanded(
                         child: Text(
@@ -96,6 +102,9 @@ class PersonItem extends StatelessWidget {
                         Icons.location_on_outlined,
                         color: Colors.grey,
                         size: 12,
+                      ),
+                      const SizedBox(
+                        width: 4,
                       ),
                       Text(
                         location,

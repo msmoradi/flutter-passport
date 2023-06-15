@@ -24,5 +24,5 @@ class ItemData {
         icon = json['icon'],
         color = json['color'],
         backgroundItem = json['background_item'],
-        company = 'ترکیه رهیاب';
+        company = '(ترکیه رهیاب)';
 }

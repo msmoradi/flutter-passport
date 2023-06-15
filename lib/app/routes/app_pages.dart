@@ -32,7 +32,7 @@ class AppPages {
         GetPage(
           preventDuplicates: true,
           name: _Paths.achievement,
-          page: () => const AchievementView(),
+          page: () => AchievementView(),
           binding: AchievementBinding(),
         ),
         GetPage(

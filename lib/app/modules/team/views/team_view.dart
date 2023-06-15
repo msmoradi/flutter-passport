@@ -33,6 +33,7 @@ class TeamView extends BaseView<TeamController> {
                 return ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
                       minimumSize: const Size.fromHeight(50),
+                      elevation: 0,
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.horizontal(
                           left: Radius.circular(10.0),
