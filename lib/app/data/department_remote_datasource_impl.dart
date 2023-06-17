@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:dio/dio.dart';
 import 'package:passport/app/core/base/base_remote_source.dart';
 import 'package:passport/app/core/model/Item_data.dart';
@@ -24,5 +26,24 @@ class DepartmentRemoteDatasourceImpl extends BaseRemoteSource
       });
     }
     return items;
+  }
+
+  @override
+  Future saveData(List<int> selectedDay) {
+    var params = {
+      "selected_day": selectedDay,
+    };
+
+    var dioCall = dioClient.post(
+      "upload/etlo/save_data.php",
+      data: jsonEncode(params),
+    );
+
+    try {
+      return callApiWithErrorParser(dioCall)
+          .then((response) => _parseResponse(response));
+    } catch (e) {
+      rethrow;
+    }
   }
 }

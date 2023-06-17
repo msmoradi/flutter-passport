@@ -26,7 +26,7 @@ class AppPages {
         GetPage(
           preventDuplicates: true,
           name: _Paths.about,
-          page: () => const AboutView(),
+          page: () => AboutView(),
           binding: AboutBinding(),
         ),
         GetPage(

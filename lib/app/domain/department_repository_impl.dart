@@ -12,4 +12,9 @@ class DepartmentRepositoryImpl extends DepartmentRepository {
   Future<List<ItemData>> getDepartmentsData() {
     return _remoteSource.getDepartmentsData();
   }
+
+  @override
+  Future saveData(List<int> selectedDay) {
+    return _remoteSource.saveData(selectedDay);
+  }
 }
